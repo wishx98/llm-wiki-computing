@@ -1,0 +1,143 @@
+# LLM Wiki Index
+
+## Sources
+- [[摘要-s2-2601857-6g-computing-service]] — 本文件针对 6G 架构增强提出了支持 6G 计算服务的方案，重点在于由核心网控制的通信与计算协同。
+- [[摘要-s2-2601896-af-edge-coordination]] — 爱立信提出的方案 22.4 建议由应用功能（AF）或边缘使能层（EEL）负责通信与计算的协同。
+- [[摘要-s2-2601897-compute-management-issues]] — 深度探讨了核心网管理计算资源时的 IaaS/PaaS 区分及术语统一问题。
+- [[摘要-s2-2601933-ursp-computing-authorization]] — OPPO 提出的基于 URSP 增强的计算服务授权与会话建立方案。
+- [[摘要-s2-2601934-cmf-resource-management]] — OPPO 提出的基于 CMF 与 6G4c 接口的算力资源监控与管理方案。
+- [[摘要-s2-2601959-pdu-session-computing-attachment]] — NEC 提出的 PDU 会话建立与计算服务配给集成方案，引入 RMF 和 CSF。
+- [[摘要-s2-2601960-computing-registration-discovery]] — NEC 定义的计算服务注册与发现流程，涵盖时延/资源约束过滤。
+- [[摘要-s2-2601965-anb-capability-collection]] — 传音提出的 6G 基站（aNB）硬件级算力收集与 CCIF 开放方案。
+- [[摘要-s2-2601968-nas-requested-computing-coordination]] — 联想提出的基于 Computing NAS 的通算协同闭环调度方案。
+- [[摘要-s2-2601969-dn-compute-site-awareness]] — 联想提出的对第三方 DN 算力站点的感知与监控方案。
+- [[摘要-s2-2601980-variant-a-sm-nas-coordination]] — OPPO 提出的基于 SM-NAS 与 K8s API 的通算协同 Variant A 方案。
+- [[摘要-s2-2601981-computing-architecture-requirements]] — OPPO 总结的 6G 计算服务四大基础架构要求。
+- [[摘要-s2-2602003-cah-predictive-qos]] — Google 提出的通过上下文感知包头（CAH）实现预测性 QoS 的方案。
+- [[摘要-s2-2602029-cmcf-joint-optimisation]] — 乐天移动提出的基于 CMCF 与 NWDAF 的联合准入安置方案。
+- [[摘要-s2-2602036-variant-e-user-plane-signaling]] — 小米提出的基于用户面信令的 Variant E 方案及上下文检索机制。
+- [[摘要-s2-2602037-csmf-resource-exposure]] — 小米提出的详尽 GPU/CPU 算力指标监测与能力开放方案。
+- [[摘要-s2-2602040-variant-h-ccc-abstraction]] — LG Uplus 提出的基于 CCC 抽象与 AF 触发的 Variant H 方案。
+- [[摘要-s2-2602043-ccc-data-format]] — LG Uplus 定义的算力等级（CCC）与剖面（CCCP）的详细数据格式。
+- [[摘要-s2-2602102-distributed-computing-cn-dn]] — 大唐提出的跨核心网与数据网络的分布式计算流转与路由引导方案。
+- [[摘要-s2-2602105-computing-service-authorization-ue-policy]] — 大唐提出基于增强型 URSP 或独立算力策略的终端授权与卸载决策机制。
+- [[摘要-s2-2602106-computing-resource-collection]] — 大唐定义的详细算力资源参数模型及基于计算节点的注册监控流程。
+- [[摘要-s2-2602044-non-policy-authorization]] — LG Uplus 关于 CCF 作为非策略授权中央控制点的安全方案更新。
+- [[摘要-s2-2602073-cmf-monitoring-profile]] — LGE 提出的算力资源概览 (Profile) 注册与 CMF 监控方案。
+- [[摘要-s2-2602089-6g-computing-definitions-requirements]] — 三星定义的 6G 算力服务、SHE 与逻辑站点等基础架构要求。
+- [[摘要-s2-2602103-service-continuity-relocation-delay]] — 大唐提出的基于重定位时延评估的业务连续性保障机制。
+- [[摘要-s2-2602104-cn-controlled-coordination]] — 大唐整合的 6G 核心网控制下的各种通算协同变体，引入 CCCE。
+- [[摘要-s2-2602123-management-exposure]] — LGE 提出的算力服务部署信息管理与暴露流程，基于 NEF 架构。
+- [[摘要-s2-2602128-penholder-coordination]] — 华为主导的通算协调方案收敛，引入计算会话 (Computing Session) 概念。
+- [[摘要-s2-2602129-cspf-computing-layer]] — 华为主导的引入 CSPF 正向代理与任务级计算层 (Computing Layer) 的方案。
+- [[摘要-s2-2602130-easdf-monitoring]] — LGE 提出的基于 EASDF 订阅与监控算力资源状态的 re-discovery 方案。
+- [[摘要-s2-2602131-penholder-convergence]] — 联发科主导的 6G 算力架构全方案简化与术语统一收敛。
+- [[摘要-s2-2602286-apple-agnostic-requirements]] — Apple 提出的应用协议无关性与关联 ID 隐私方案。
+- [[摘要-s2-2602301-ccce-variant-b-update]] — NTT DOCOMO 定义的基于 CCCE 与 CC-Profile 的通算协同流程。
+- [[摘要-s2-2602305-samsung-variant-f]] — 三星提出的基于新平面 (New Plane) 的算力请求方案。
+- [[摘要-s2-2602429-architectural-requirements-definitions]] — 多厂商联合定义的 6G 算力业务基础架构要求与组件分类。
+- [[摘要-s2-2602430-af-coordination-update]] — Nokia 主导的基于 AF 协同与 N6 延迟映射的通算增强方案。
+- [[摘要-s2-2603513-penholder-summary]] — 6G 算力中心化牵头人报告，定义了全套 5 大技术分类与 29 项遗留技术分歧。
+
+## Entities
+- [[CCF]] — 负责算力站点管理、任务选择及策略生成的计算控制功能网元。
+- [[CMF]] — 负责算力资源监控与 Profile 管理的计算管理功能网元。
+- [[CCCE]] — 负责跨域协调、联合策略执行及 SHE 服务器交互的核心网元。
+- [[EASDF]] — 6G 增强型发现功能，支持算力资源监控与重发现。
+- [[6G-UPF]] — 具备算力站点连接能力（Ny/N6 接口）的用户面网元。
+- [[6G-SMF]] — 核心会话管理，执行 CCCE 选择、DNAI 指导及 QoS 自适应映射。
+- [[6G-PCF]] — 策略生成方，支持 CC-Profile 转换与 CC-Policy 控制。
+- [[SHE-Controller]] — 驻留在算力环境侧，负责具体硬件资源预留与状态上报的逻辑控制器。
+- [[Apple]] — 主张应用协议无关性、隐私保护与领域隔离的 6G 贡献者。
+- [[Nokia]] — 联合定义 6G 算力基础架构要求与 AF 协同方案的贡献者。
+- [[Samsung]] — 定义算力服务基础概念及新平面请求方案的贡献者。
+- [[NTT-DOCOMO]] — 基于 CCCE/CC-Profile 细化 Variant B 架构流程的贡献者。
+- [[Model-Management]] — 负责算力站点上模型部署及镜像管理的网元。
+- [[System-AI-Agent]] — 负责 6G 架构中意图解析与任务翻译的功能实体。
+- [[AF]] — 6G 核心网能力开放的受益者及通算协同的决策主体。
+- [[Edge-Enabling-Layer]] — 基于 TS 23.558 的边缘使能层，包含 EES/EEC/EAS。
+- [[SHE]] — 运营商拥有或管理的服务托管环境，用于部署算力站点。
+- [[IaaS]] — 基础设施级算力服务，提供 VM、容器等硬件资源。
+- [[PaaS]] — 平台级算力服务，提供运行时、数据库等软件环境。
+- [[UE]] — 6G 计算服务的消费者，支持 NAS 计算请求、URSP 评估及 PCO 能力。
+- [[Computing-Node]] — 提供算力资源的物理或逻辑实体，是 CMF 的监控对象。
+- [[RMF]] — 资源管理功能，负责计算服务的发现、配给与管控。
+- [[CSF]] — 计算服务功能，负责托管 AI/XR 业务工作负载。
+- [[CCIF]] — 计算能力信息功能，负责 aNB/UPF 算力指标的聚合与开放。
+- [[aNB]] — 支持算力感知与上报的 6G 高级基站。
+- [[UDR]] — 存储用户计算业务订阅与授权策略的数据库。
+- [[AMF]] — 负责算力信令转发与基站算力指标代报的接入管理网元。
+- [[6G-NEF]] — 支持第三方 DN 算力站点信息报送与授权的安全网关。
+- [[CSEF]] — 计算服务开放功能，负责 API 暴露与 Compute Token 颁发。
+- [[CSMF]] — 计算服务管理功能，侧重于服务层面的多维指标监测与开放。
+- [[NWDAF]] — 提供路径时延、移动性风险及负荷预测的网络数据分析网元。
+- [[gNB]] — 6G 接入网网元，支持 CAH 硬件级解析与预测性无线资源分配。
+- [[Proxy-NF]] — 负责算力注册信息汇聚与解耦分发的中间代理网元。
+- [[LGUplus]] — 韩国电信运营商，Variant H 方案的主要贡献者。
+- [[ETRI]] — 韩国电子通信研究院，算力建模与等级定义的贡献者。
+- [[OPPO]] — 6G 算力支持 (KI#22) 主要牵头厂商，主张基于 URSP 的授权方案。
+- [[Intel]] — 6G 算力支持 (KI#22) 联合牵头厂商，强调行业标准兼容性。
+- [[MediaTek]] — 6G 算力支持 (KI#22) 联合牵头厂商，提供架构收敛基础。
+- [[CATT]] — 大唐电信，分布式计算与算力资源监测方案的贡献者。
+- [[LGE]] — LG 电子，算力资源 Profile 与 CMF 监控方案的贡献者。
+- [[Compute-Orchestrator]] — 外部算力编排器，负责 Compute DN 的资源调度。
+
+## Concepts
+- [[Computing-Task]] — 消耗计算资源以将输入转化为输出的任务，具有时间约束。
+- [[Computing-Site]] — 承载应用组件的物理或逻辑载体，可位于 SHE 或 DN。
+- [[Computing-QoS]] — 6G 系统为计算任务提供的可量化服务质量保障。
+- [[Intent-Information]] — 描述用户目标而非具体硬件需求的结构化语义信息。
+- [[Computing-Resource]] — 执行计算任务所需的软硬件集合，涵盖 FLOPS、时延、吞吐量及存储等指标。
+- [[Distributable-Application-Component]] — 可在 UE 或算力站点间灵活迁移的应用组件。
+- [[Compute-Offloading]] — 将应用工作负载从 UE 迁移到边缘或云端算力节点的过程。
+- [[Compute-Lifecycle-Management]] — 算力资源从规划、实例化到管理与释放的全生命周期过程。
+- [[URSP]] — 增强的终端选路策略，用于授权计算服务及配置参数。
+- [[6G4c-Reference-Point]] — CMF 与算力节点间的参考点，用于资源监控。
+- [[Computing-Resource-Monitoring]] — 基于 6G4c 的算力状态上报与监控机制。
+- [[FLOPS-TOPS]] — 衡量算力性能的标准单位，用于监控与业务需求匹配。
+- [[PCO]] — 信令容器，用于计算能力的宣告与下发访问凭据。
+- [[Computing-Service-Attachment]] — 计算服务与 PDU 会话建立流程的深度集成机制。
+- [[Computing-Service-Registration]] — 终端在 PDU 会话建立后向 RMF 注册算力支持的流程。
+- [[Computing-Service-Discovery]] — 终端获取符合时延/资源约束的计算服务实例的流程。
+- [[Path-Programming]] — RMF 协调 SMF 在 UPF 上预配置算力业务路径的机制。
+- [[aNB-Computing-Capability]] — aNB 上报的详尽硬件（CPU/FLOPS）及负载指标。
+- [[Computing-Capability-Exposure]] — 将网络侧采集的算力指标有序开放给 AF 的业务目标。
+- [[Computing-NAS]] — 终端发起的用于算力授权与站点锁定的专用信令。
+- [[Virtual-Computing-Node]] — 将 UPF 与算力站点统合管理的逻辑实体。
+- [[Control-Plane-Coordination]] — 通过控制面信令闭环（如 CMF/SMF）实现的通算资源保障。
+- [[User-Plane-Coordination]] — 利用用户面反馈（如 GTP-U 扩展）实现的低时延动态协同。
+- [[E2E-Delay-Optimization]] — 6G 算网大脑的核心目标：通信与计算时延的动态平衡。
+- [[DN-Based-Computing-Site]] — 位于外部数据网络中的、需通过特定机制感知的算力实体。
+- [[Overall-Task-Latency]] — 6G 计算场景的时延模型：$T_{comm} + T_{comp}$。
+- [[SM-NAS-Computing-Request]] — 复用现有会话管理流程实现的一种算力接入 Variant A。
+- [[Computing-Awareness]] — 架构核心要求：支持终端、应用及网络对算力资源的多维感知。
+- [[K8s-API-Integration]] — 用户面网元通过标准 API 与云原生基础设施交互的机制。
+- [[6G-Computing-Architecture]] — 6G 算力支撑方案的全景架构视图。
+- [[6G-Computing-Requirements]] — 6G 计算服务的架构准则与功能底座。
+- [[CAH]] — 16 位上下文感知垫层，用于在加密环境下提供业务感知指标。
+- [[Predictive-QoS]] — 基于业务预判的主动式资源管理机制。
+- [[Joint-Admission-Placement]] — 同时考虑算力可用性与路径 KPI 的联合优化决策。
+- [[Computing-Service-Continuity]] — 确保终端移动或算力波动时任务不中断的机制。
+- [[Computing-Context-Retrieval]] — 算力站点迁移时的状态快照获取与转移过程。
+- [[Variant-E]] — 终端通过用户面消息直接向 CMF 请求算力的接入方案。
+- [[Variant-H]] — 应用功能（AF）触发的、基于意图驱动与策略绑定的接入方案。
+- [[CCC]] — 计算能力等级，将底层异构算力抽象为标准化的性能级别。
+- [[CCCP]] — 计算能力等级剖面，包含地理化时延与节点信息的具体规格。
+- [[Intent-Based-Compute-Request]] — AF 通过选择等级而非显式参数来请求服务的模式。
+- [[Policy-Based-Binding]] — 将计算会话与 PDU 会话在策略面进行强关联的机制。
+- [[GPU-Computing-Metrics]] — 包含显存占用、核心利用率等在内的 GPU 专属监测指标。
+- [[Distributed-Computing]] — 跨越多个任务站点（如 CN 和 DN）分阶段处理任务的架构。
+- [[Computing-related-UE-Policy]] — 结合 URSP 下发的算力可用性与性能保证策略。
+- [[Computing-Resource-Parameters]] — 用于刻画异构算力的标准元数据集合。
+- [[Computing-Node-Registration]] — 计算节点将资源信息主动注册至控制面（CCF）的流程。
+- [[6G-Computing-Service]] — 利用站点算力与通信连接共同完成应用负荷执行的服务。
+- [[Service-Hosting-Environment]] — 部署在 CN 或 DN 中的、受运营商控制的算力服务运行环境。
+- [[Computing-Session]] — 用于承载算力业务数据流的专用或增强型 PDU 会话。
+- [[Application-Component]] — 应用的功能拆分单元，分为前端、后端及可分发组件。
+- [[CC-Profile]] — 包含通信 QoS 与算力资源（SHE）要求的联合需求模板。
+- [[CC-Policy]] — 核心网生成的通算联合策略。
+- [[Correlation-ID]] — 用于跨网元关联 AF 请求并保护隐私的临时标识。
+- [[Aggregated-Latency]] — 通信时延与计算时延的总和，是算力卸载决策的核心指标。
+- [[Relocation-Delay]] — 算力站点切换时由状态同步或环境重建产生的额外时延。
+- [[N6-QoS-Class]] — 将算力需求映射至 N6 接口传输优先级的分类标识。
+- [[New-Plane]] — 用于承载算力控制平面请求的新型平面（如服务平面）。

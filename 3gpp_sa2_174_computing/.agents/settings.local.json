@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(ls -1 *.md)",
+      "Bash(xxd)",
+      "Bash(grep -l \"Source:.*Qualcomm\" *.md)"
+    ]
+  }
+}
