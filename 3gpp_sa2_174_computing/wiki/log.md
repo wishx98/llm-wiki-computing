@@ -18,3 +18,22 @@
 - **[2026-04-20] ingest | 6G 算力中心化方案整合 (Penholder Batch)**
 - **变更**: 处理 5 份牵头人总结文档 (S2-2603513 等)；新增实体 [[OPPO]], [[Intel]]；新增全景架构概念 [[6G-Computing-Architecture]]；更新 [[Computing-Site]] 争议记录。
 - **冲突**: 记录了关于算力站点位置 (CN vs SHE/DN) 的重大架构分歧。
+
+## [2026-04-20] query | SHE 定义与相关实体解析
+- **输出**: [[SHE]], [[SHE-C]], [[SHE-Controller]], [[Service-Hosting-Environment]]
+
+## [2026-04-20] query | CCF 与 CMF 定义及职能辨析
+- **输出**: [[CCF]], [[CMF]]
+
+## [2026-04-21] query | CCF 与 CSPF 各自的职责和功能
+- **输出**: [[CCF]], raw/09-archive/S2-2602129 (CSPF 来源)
+
+## [2026-04-21] query | 华为提出的 Computing Layer Link 详细介绍
+- **输出**: [[Computing-Layer-Link]], [[Computing-Layer-Link-Overview]]
+
+## [2026-04-21] query | Google 方案 CAH（Context-Aware Header）详细介绍
+- **输出**: [[CAH]], [[摘要-s2-2602003-cah-predictive-qos]], raw/09-archive/S2-2602003
+
+## [2026-04-21] lint | 修复了 17 个索引问题
+- **新增注册**: 5 个未同步页面（SHE-C, Communication-Computing-Coordination, Computing-Resource-Profile, Logical-Computing-Site, 摘要-s2-2602122）
+- **移除无效注册**: 12 个缺失页面（6G-PCF, Nokia, NTT-DOCOMO, Compute-Offloading, Path-Programming, aNB-Computing-Capability, Computing-Capability-Exposure, Computing-Service-Registration, Computing-Service-Discovery, 6G-Computing-Requirements, Computing-Session, 摘要-s2-2602128）

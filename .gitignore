@@ -1,1 +1,9 @@
-.obsidian
+.obsidian/
+.claudian/
+.qa/
+.uv-cache/
+.venv/
+node_modules/
+*.ppt
+*.pptx
+!LLM-Wiki-3GPP-内部汇报.pptx
